@@ -48,7 +48,12 @@ function setGameOver() {
   resetButton = document.createElement('button');
   resetButton.textContent = 'Start new game';
   document.body.append(resetButton);
+  resetButton.className += "gameStart";
   resetButton.addEventListener('click', resetGame);
+  resetButton.style.color = 'green';
+  resetButton.style.backgroundColor = 'white';
+  resetButton.style.height = '50px';
+  resetButton.style.width = '150px';
 }
 
 function resetGame() {
